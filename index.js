@@ -79,5 +79,20 @@ const presidentialCandidates = {
     LP: 'Peter Obi',
     NNPP: 'Rabiu Kwankwaso',
     PDP: 'Atiku Abubakar',
- }
+ };
  
+// enumeration Method - For..in
+
+for (const party in presidentialCandidates){
+
+  console.log('${presidentialCandidates[party]} is the presidential candidate of ${party}')
+}
+
+// Obect.keys
+
+// enumeration Method -FOR..of
+
+for (let [party,candidate] of Object.entries(presidentialCandidates)){
+
+  console.log('${candidate} is the presidential candidate of ${party}')
+}
